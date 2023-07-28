@@ -28,10 +28,6 @@
 
         public int CalculateFrameScore(int previousScore, Frame? nextFrame = null)
         {
-            foreach(var roll in frameRolls)
-            {
-                Console.Write($" {roll} ");
-            }
             int frameScore = frameRolls.Sum();
 
             if (frameRolls[0] == 10 && nextFrame != null)
