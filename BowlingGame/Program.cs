@@ -3,18 +3,18 @@
 //ARRANGE
 Game game = new Game();
 game.SetRolls(new int[]
-            {   0, 10,
-                0, 10,
-                0, 10,
-                0, 10,
-                0, 10,
-                0, 10,
-                0, 10,
-                0, 10,
-                0, 10,
-                0, 10, 0 });
+{   4, 3,
+    7, 3,
+    5, 2,
+    8, 1,
+    4, 6,
+    2, 4,
+    8, 0,
+    8, 0,
+    8, 2,
+    10, 1, 7 });
 
 //ACT
 int score = game.CalculateGame();
 
-Console.WriteLine($"Frame{9}, Score{score}");
+Console.WriteLine($"Score: {score}");

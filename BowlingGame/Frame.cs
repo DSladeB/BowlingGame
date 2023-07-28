@@ -5,6 +5,7 @@
         private List<int> frameRolls = new List<int>();
         public Frame? NextFrame { get; set; }
 
+        public int FrameScore { get; private set; }
 
         public List<int> GetFrameRolls()
         {
@@ -39,7 +40,8 @@
                 frameScore += nextFrame.GetNextRolls(1);
             }
 
-            return frameScore + previousScore;
+            FrameScore =  frameScore + previousScore;
+            return FrameScore;
         }
 
         public int GetNextRolls(int count)
